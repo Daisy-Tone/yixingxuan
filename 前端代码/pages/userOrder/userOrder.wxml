@@ -1,0 +1,43 @@
+<view class="Top">
+  <view class="Title-block">
+    <image style="width:150rpx;height:150rpx" src="http://1.14.144.194:8080/download2/clothes/{{orderList[0].style_name}}{{orderList[0].color}}"></image>
+    <view class="Title">
+      <view style="width:500rpx">订单号：{{orderInfo.user_order_no}}</view>
+      <view style="width:500rpx">订单状态：{{orderInfo.user_order_status}}</view>
+    </view>
+  </view>
+  <view style="display:flex;margin-top:15rpx">
+    <view>产品名：</view>
+    <view>{{orderList[0].style_name}}</view>
+  </view>
+</view>
+
+<view class="Middle" wx:for="{{orderList}}" wx:key="this">
+
+  <view class="shop-block">
+    <view class="shopList">
+      <view>{{item.color}}色 , {{item.size}}码 , x {{item.num}}件 </view>
+    </view>
+    <view style="text-align:right">积分价：{{item.point*item.num}}</view>
+  </view>
+</view>
+
+<view class="bottom">
+  <view class="conclusion">
+    <view class="trading-block">
+      <view>交易时间：{{orderInfo.transaction_time}}</view>
+      <view>发货时间：{{orderInfo.delivery_time}}</view>
+      <view>收货时间：{{orderInfo.receipt_time}}</view>
+    </view>
+  </view>
+  <view class="send-receive">
+    <view class="totalPrice">积分总价：{{orderInfo.use_points}}</view>
+    <view ></view>
+    <view class="buttons">
+      <view class="logistics">查看物流</view>
+      <view wx:if="{{!hidden}}" class="logistics" bindtap="comfirm">确认收货</view>
+      <view wx:if="{{hidden&&!appraiseH}}" class="logistics" bindtap="appraise">评价此单</view>
+    </view>
+    <textarea class="appraise" wx:if="{{hidden&&!appraiseH}}" type="text" placeholder="请输入评语" bindinput="changeTextarea"></textarea>
+  </view>
+</view>

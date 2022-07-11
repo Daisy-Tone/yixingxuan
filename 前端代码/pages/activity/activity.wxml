@@ -1,0 +1,21 @@
+<!--pages/activity/activity.wxml-->
+<view class="swiper">
+  <swiper class="ads-block" indicator-dots indicator-color="gray" indicator-active-color="white"
+  autoplay circular>
+    <swiper-item  wx:for="{{uri}}">
+      <image class="images" src="{{item}}"></image>
+    </swiper-item>
+  </swiper>
+  <view >
+    <view class="Container" bindtap="clicktoMyPoint" wx:for="{{activityJson}}">
+      <!-- 包含我的步数和图标，使其居中 -->
+      <view class="makeContentMid" id="{{item.point}}" bindtap="activityJson">
+        <view class="contentText">{{item.title}}</view>
+        <!-- 图标区域 -->
+        <view class="LogoArea">
+          <image class="Logo" src="http://1.14.144.194:8080/download2/images/point.png"></image>
+        </view>
+      </view>
+  </view>
+</view>
+</view>

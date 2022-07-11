@@ -1,0 +1,28 @@
+<view>
+  <view class="Top">
+    <!-- <view class="gotoPoint">
+      <image class="icon" src="http://1.14.144.194:8080/download2/images/point.png"></image>
+      <view>我的积分</view>
+    </view> -->
+    <view class="todayStep-block">
+      <view class="todayStepTitle">总积分</view>
+      <view class="todayStepContent">
+        <text>{{allPoint}}</text>
+      </view>
+    </view>
+  </view>
+
+  <scroll-view scroll-y class="Middle">
+    <view class="title">
+      <view class="stepTitle">积分明细</view>
+      <view class="pointSource">来源</view>
+      <view class="dayTitle">日期</view>
+    </view>
+    <view class="everydayStep-block" wx:for="{{pointDetail}}">
+      <view class="everydayStep">{{item.point}}</view>
+      <view class="comment">{{item.comment}}</view>
+      <view class="everyday">{{item.point_date}}</view>
+    </view>
+    <view class="copyRight">Copyright©2021 伊行宣</view>
+  </scroll-view>
+</view>

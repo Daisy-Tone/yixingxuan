@@ -1,0 +1,71 @@
+
+.Top{
+  width: 90%;
+  height: 220rpx;
+  padding: 5rpx 5%;
+  margin-top: 20rpx;
+  box-shadow: 2rpx 2rpx 2rpx 2rpx #f7f7f7;
+}
+.Title-block{
+  display: flex;
+}
+.Title{
+  font-size: 13px;
+  margin-left: 20rpx;
+}
+.shop-block{
+  width: 90%;
+  height: 150rpx;
+  margin-top: 10rpx;
+  padding: 5rpx 5%;
+  font-size: 14px;
+  box-shadow: 2rpx 2rpx 2rpx 2rpx #e2e2e2;
+}
+.shopList{
+  color: #38aaf3;
+  height: 60rpx;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+.appraise{
+  height: 120rpx;
+  width: 90%;
+  margin:auto;
+  margin-top: 30rpx;
+  border: solid #000 1rpx;
+}
+.trading-block{
+  width: 100%;
+  height: 170rpx;
+  margin-top: 20rpx;
+  margin-left: 30rpx;
+  box-shadow: 2rpx 2rpx 2rpx 2rpx #e2e2e2;
+}
+.send-receive{
+  height: 150rpx;
+  width: 100%;  
+}
+.totalPrice{
+  color: black;
+  font-size: 18px;
+  text-align: right;
+  margin-top: 5rpx;
+  margin-right: 30rpx;
+}
+.buttons{
+  margin-top: 5rpx;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.logistics{
+  width:200rpx;
+  height: 60rpx;
+  margin-left: 20rpx;
+  padding: 10rpx 10rpx;
+  border-radius: 100rpx;
+  background-color: #38aaf3;
+  color: white;
+  line-height: 60rpx;
+  text-align: center;
+}

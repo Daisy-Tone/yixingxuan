@@ -1,0 +1,97 @@
+{
+  "setting": {
+    "compileHotReLoad": true
+  },
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/userPage/userPage",
+          "pathName": "pages/userPage/userPage",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/clientPage/clientPage",
+          "pathName": "pages/clientPage/clientPage",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/activity/activity",
+          "pathName": "pages/activity/activity",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/userPersonInfo/userPersonInfo",
+          "pathName": "pages/userPersonInfo/userPersonInfo",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/clothdetail/clothdetail",
+          "pathName": "pages/clothdetail/clothdetail",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/submitRequest/submitRequest",
+          "pathName": "pages/submitRequest/submitRequest",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/clientOrder/clientOrder",
+          "pathName": "pages/clientOrder/clientOrder",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/clientOrderList/clientOrderList",
+          "pathName": "pages/clientOrderList/clientOrderList",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/myStep/myStep",
+          "pathName": "pages/myStep/myStep",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/userOrder/userOrder",
+          "pathName": "pages/userOrder/userOrder",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/newIndex/newIndex",
+          "pathName": "pages/newIndex/newIndex",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/myPoint/myPoint",
+          "pathName": "pages/myPoint/myPoint",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/buyCar/buyCar",
+          "pathName": "pages/buyCar/buyCar",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  },
+  "description": "项目私有配置文件。此文件中的内容将覆盖 project.config.json 中的相同字段。项目的改动优先同步到此文件中。详见文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html",
+  "projectname": "%E4%BC%8A%E8%A1%8C%E5%AE%A3"
+}

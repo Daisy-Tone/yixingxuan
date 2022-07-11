@@ -1,0 +1,36 @@
+<view class="info-block">
+  <view class="touxiangIntro">头像</view>
+  <view class="touxiang-area">
+    <image class="icon" src="{{User.userAvatar}}"></image>
+  </view>
+</view>
+<view class="info-block">
+  <view class="title">用户名</view>
+  <view class="info-area">
+    <view class="info">{{User.userName}}</view>
+  </view>
+</view>
+<view class="info-block">
+  <view class="title">生日</view>
+  <view class="info-area">
+    <view class="info">{{User.userBirthday}}</view>
+  </view>
+</view>
+<view class="info-block">
+  <view class="title">用户id</view>
+  <view class="info-area">
+    <view class="info">{{User.userid}}</view>
+  </view>
+</view>
+<view class="info-block">
+  <view class="title">性别</view>
+  <view class="info-area">
+    <view class="info">{{User.userSex}}</view>
+  </view>
+</view>
+<view class="info-block">
+  <view class="title">收货地址</view>
+  <view class="info-area">
+    <view class="info">{{User.userAddress}}</view>
+  </view>
+</view>

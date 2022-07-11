@@ -1,0 +1,62 @@
+/* pages/clientPage/clientPage.wxss */
+.Top{
+  height: 300rpx;
+  width: 100%;
+  display: flex;
+  background-size: 100% 100%;
+  background-image: url(http://1.14.144.194:8080/download2/images/伊行宣客户界面顶部.jpg);
+}
+.touxiang{
+  height: 100rpx;
+  width: 100rpx;
+  border-radius: 100%;
+  margin-top: 20rpx;
+  margin-left: 10rpx;
+}
+.clientName{
+  margin-left: 20rpx;
+  margin-top: 50rpx;
+  font-size: 16px;
+  color: white;
+}
+
+/* 左右部分 */
+.step-point{
+  display: flex;
+  margin-top: 2rpx;
+}
+.Container{
+  height: 220rpx;
+  width: 380rpx;
+  text-align: center;
+  margin-top: 5rpx;
+  box-shadow: 2rpx 2rpx 3rpx 3rpx #EBEBEB;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+  border-bottom-left-radius: 5%;
+  border-bottom-right-radius: 5%;
+}
+/* 使step垂直居中 */
+.makeContentMid{
+  margin: auto;
+  margin-top: 37px;
+  width: 200rpx;
+  height: 45rpx;
+  display: flex;
+}
+/* 我的步数和图标并排 */
+.contentText{
+  width: 150rpx;
+  font-size: 16px;
+  color: #38aaf3;
+  display: flex;
+}
+/* Logo域 */
+.LogoArea{
+  width: 50rpx;
+}
+.Logo{
+  height: 48rpx;
+  width: 48rpx;
+}
+

@@ -1,0 +1,40 @@
+.info-block{
+  width: 100%;
+  height: 130rpx;
+  margin-top: 1rpx;
+  display: flex;
+  background-color: white;
+  box-shadow: 2rpx 2rpx 3rpx 3rpx #EBEBEB;
+}
+.touxiangIntro{
+  width: 200rpx;
+  margin-top: 45rpx;
+  margin-left: 10rpx;
+}
+.touxiang-area{
+  width: 130rpx;
+  margin-top: 10rpx;
+  margin-left: 430rpx;
+}
+.icon{
+  width: 110rpx;
+  height: 110rpx;
+}
+.title{
+  width: 400rpx;
+  margin-top: 45rpx;
+  margin-left: 10rpx;
+}
+.info-area{
+  width: 800rpx;
+  margin-left: 200rpx;
+  margin-top: 45rpx;
+  color: #b3b3b3;
+  /* overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; */
+}
+.info{
+  float: right;
+  margin-right: 15rpx;
+}

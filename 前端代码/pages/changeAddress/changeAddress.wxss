@@ -1,0 +1,12 @@
+.input-block{
+  display: flex;
+}
+.input{
+  width: 80%;
+  height: 80rpx;
+  border: solid 1rpx #38aaf3;
+}
+.btn{
+  width: 20%;
+  height: 80rpx;
+}

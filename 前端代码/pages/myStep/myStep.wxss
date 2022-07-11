@@ -1,0 +1,65 @@
+/* 当天步数信息 */
+.gotoPoint{
+  float: right;
+  text-align: center;
+  color: #38aaf3;
+  font-size: 11px;
+}
+.icon{
+  height: 50rpx;
+  width: 50rpx;
+}
+.todayStep-block{
+  margin-left: 10%;
+  width: 80%;
+  height: 300rpx;
+}
+.todayStepContent{
+  margin-top: 60rpx;
+  text-align: center;
+  font-size: 50px;
+  color: #38aaf3;
+}
+/* 每天步数信息 */
+.Middle{
+  max-height: 890rpx;
+  margin-top: 50rpx;
+  background-color: #38aaf3;
+  opacity: 0.4;
+}
+/* 步数每日框 */
+.title{
+  display: flex;
+  background-color: white;
+}
+/* 标题-步数 */
+.stepTitle{
+  margin-left: 100rpx;
+}
+/* 标题-每日 */
+.dayTitle{
+  margin-left: 300rpx;
+}
+.everydayStep-block{
+  width: 100%;
+  height: 100rpx;
+  margin-left: 0;
+  margin-top: 1rpx;
+  display: flex;
+  background-color: white;
+  box-shadow: 2rpx 2rpx 3rpx 3rpx #EBEBEB;
+}
+/* 每日步数 */
+.everydayStep{
+  width: 300rpx;
+  font-size: 25px;
+  margin-left: 100rpx;
+}
+/* 每日 */
+.everyday{
+  margin-left: 60rpx;
+}
+/*版权说明*/
+.copyRight{
+  text-align: center;
+}

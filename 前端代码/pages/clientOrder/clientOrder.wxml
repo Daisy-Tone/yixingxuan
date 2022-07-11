@@ -1,0 +1,39 @@
+<view class="allView">
+  <view class="order-block">
+    <view class="img-title">
+      <image src="{{clientOrder.design_pic}}" class="image-block"></image>
+      <!-- <view class="title-block">{{text}}</view> -->
+      <view class="audit-block">
+        <view>审核结果：</view>
+        <view style="color:red">{{clientOrder.client_verify_status}}</view>
+      </view>
+      <view class='select_box'>
+        <view class='select' catchtap='selectTap' wx:if="{{showSelectBox}}">
+          <text class='select_text'>{{selectData[index]}}</text>
+          <image class='select_img {{show&&"select_img_rotate"}}' src='http://1.14.144.194:8080/download2/images/point.png'></image>   
+        </view>
+        <view class='option_box' style='height:{{show?(selectData.length>5?300:selectData.length*60):0}}rpx;'>
+          <text class='option' style='{{index==selectData.length-1&&"border:0;"}}' wx:for='{{selectData}}' wx:key='this' data-index='{{index}}' catchtap='optionTap'>{{item}}</text>
+        </view>
+      </view>
+      <view class="updateBtn" bindtap="update" wx:if="{{showSelectBox}}">更新</view>
+    </view>
+    <!-- 衣服详情 -->
+    <view class="clothes-block">
+      <view class="left">
+        <view class="InfoTitle">款式及数量：</view>
+        <view class="showStyle_Num" wx:for="{{style_num}}" wx:key="this">
+          {{item.style_name}}x{{item.count}}
+        </view>
+      </view>
+      <view class="right">
+        <view class="InfoTitle">尺码：</view><br />
+        <view class="showSize" wx:for="{{size}}" wx:key="this">
+            <text>{{item}}</text>
+            <text wx:if="{{index!=(size.length-1)}}">,</text>
+        </view>
+      </view>
+    </view>
+
+  </view>
+</view>

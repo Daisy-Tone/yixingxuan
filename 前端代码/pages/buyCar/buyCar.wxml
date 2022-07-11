@@ -1,0 +1,24 @@
+<!-- 临时清单 -->
+<view class="cartList" wx:for="{{cartList}}" wx:key="this" >
+  <view class="block">
+    <view class="title-block">
+      <image class="image" src="http://1.14.144.194:8080/download2/images/repray.png"></image>
+      <view class="title">
+        <view>
+          {{item.title}}
+        </view>
+        <view style="font-size:13px;color:#B5B5B5">
+          {{item.color}}色{{item.style}}（{{item.size}}码） x {{item.num}}件
+        </view>
+
+      </view>
+    </view>
+    <view class="price">
+      价格：{{item.allPrice}}
+    </view>
+  </view>
+    <image class="icon" src="http://1.14.144.194:8080/download2/images/dec.png" bindtap="decrease" id="{{item.count}}"></image>
+</view>
+<view class="button">
+  <view class="buy" bindtap="submit">提交订单</view>
+</view>

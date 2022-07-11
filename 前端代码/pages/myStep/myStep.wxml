@@ -1,0 +1,26 @@
+<view>
+  <view class="Top">
+    <view class="gotoPoint" bindtap="clicktoMyPoint">
+      <image class="icon" src="http://1.14.144.194:8080/download2/images/point.png"></image>
+      <view>我的积分</view>
+    </view>
+    <view class="todayStep-block">
+      <view class="todayStepTitle">今日步数</view>
+      <view class="todayStepContent">
+        <text>{{WxRunStep[0].step_count}}</text>
+      </view>
+    </view>
+  </view>
+
+  <scroll-view scroll-y class="Middle">
+    <view class="title">
+      <view class="stepTitle">步数</view>
+      <view class="dayTitle">日期</view>
+    </view>
+    <view class="everydayStep-block"  wx:for="{{WxRunStep}}" >
+      <view class="everydayStep">{{item.step_count}}</view>
+      <view class="everyday">{{item.step_date}}</view>
+    </view>
+    <view class="copyRight">Copyright©2021 伊行宣</view>
+  </scroll-view>
+</view>

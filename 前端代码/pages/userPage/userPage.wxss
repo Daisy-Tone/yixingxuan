@@ -1,0 +1,125 @@
+/* pages/userPage/userPage.wxss */
+.Top{
+  height: 300rpx;
+  width: 100%;
+  background-size: 100% 100%;
+  background-image: url(http://1.14.144.194:8080/download2/images/伊行宣用户界面顶部.jpg);
+}
+.sign{
+  width: 80rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  float: right;
+  margin-right: 10rpx;
+  margin-top: 20rpx;
+  color: #38aaf3;
+  background-color: white;
+  text-align: center;
+  border-radius: 20rpx;
+}
+.get1000Points{
+  width: 200rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  float: right;
+  margin-right: 10rpx;
+  margin-top: 20rpx;
+  color: #38aaf3;
+  background-color: white;
+  text-align: center;
+  border-radius: 20rpx;
+}
+.image-block{
+  display: inline;
+}
+.touxiang{
+  height: 100rpx;
+  width: 100rpx;
+  border-radius: 100%;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+}
+.userID{
+  font-size: 28rpx;
+  color: rgb(255, 255, 255);
+  margin-left: 5rpx;
+  display: inline;
+}
+/* 左右部分 */
+.step-point{
+  display: flex;
+  margin-top: 2rpx;
+}
+.Container{
+  height: 220rpx;
+  width: 380rpx;
+  text-align: center;
+  margin-top: 5rpx;
+  box-shadow: 2rpx 2rpx 3rpx 3rpx #EBEBEB;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+  border-bottom-left-radius: 5%;
+  border-bottom-right-radius: 5%;
+}
+/* 使step垂直居中 */
+.makeContentMid{
+  margin: auto;
+  margin-top: 40px;
+  width: 200rpx;
+  height: 45rpx;
+  display: flex;
+}
+/* 我的步数和图标并排 */
+.contentText{
+  width: 150rpx;
+  font-size: 16px;
+  color: #38aaf3;
+  display: flex;
+}
+/* Logo域 */
+.LogoArea{
+  width: 50rpx;
+}
+.Logo{
+  height: 48rpx;
+  width: 48rpx;
+}
+/* 分割线 */
+.apartLineArea{
+  width: 1rpx;
+  height: 160rpx;
+  background-color: white;
+  margin-top: 30rpx;
+}
+/* 中间部分 */
+.Middle{
+  margin-top: 5rpx;
+}
+.Info-block{
+  height: 60rpx;
+  box-shadow: 2rpx 2rpx 3rpx 3rpx #EBEBEB;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+  border-bottom-left-radius: 5%;
+  border-bottom-right-radius: 5%;
+}
+.Info{
+  display: inline;
+  font-size: 16px;
+  margin-left: 10rpx;
+}
+.detail{
+  color: #9c9c9c;
+  display: inline;
+  float: right;
+  margin-right: 15rpx;
+}
+.goto{
+  display: inline;
+  float: right;
+}
+.gotoLogo{
+  height: 45rpx;
+  width: 45rpx;
+  margin-top: 5rpx;
+}

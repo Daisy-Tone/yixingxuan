@@ -1,0 +1,34 @@
+<!--pages/clientPage/clientPage.wxml-->
+<view>
+  <view class="Top" >
+    <view class="touxiang-block">
+      <image class="touxiang" src="{{User.userAvatar}}"></image>
+    </view>
+    <view class="clientName">{{User.userName}}(客户id:{{Client.clientid}})</view>
+  </view>
+
+  
+  <view class="step-point">
+    <view class="Container"  bindtap="clickToSubmitRequest">
+      <!-- 包含我的步数和图标，使其居中 -->
+      <view class="makeContentMid">
+        <view class="contentText">提交需求</view>
+        <!-- 图标区域 -->
+        <view class="LogoArea">
+          <image class="Logo" src="http://1.14.144.194:8080/download2/images/step.png"></image>
+        </view>
+      </view>
+    </view>
+    <!-- <view class="apartLineArea"></view> -->
+    <view class="Container" bindtap="clickToClientOrder">
+      <!-- 包含我的步数和图标，使其居中 -->
+      <view class="makeContentMid">
+        <view class="contentText">客户订单</view>
+        <!-- 图标区域 -->
+        <view class="LogoArea">
+          <image class="Logo" src="http://1.14.144.194:8080/download2/images/order.png"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,8 @@
+<view class="Style-block">
+    <view class="styleName"></view>
+    <view class="input-block">
+      <image class="icon" src="/images/point.png"></image>
+      <input type="text"/>
+      <image src="/images/point.png"></image>
+    </view>
+</view>

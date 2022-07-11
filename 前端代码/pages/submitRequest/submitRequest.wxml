@@ -1,0 +1,70 @@
+<!--pages/submitRequest/submitRequest.wxml-->
+<!-- 顶部 -->
+<view class="mask" wx:if="{{isRuleTrue}}"></view>
+<view class="Top" >
+  <view class="avatar-block">
+    <image class="touxiang" src="{{User.userAvatar}}"></image>
+  </view>
+  <view class="userID">{{User.userName}}(客户id:{{Client.clientid}})</view>
+</view>
+<!-- 中部 -->
+<view class="request-block">
+  <view class="adShop">
+    <view>推广产品</view>
+    <textarea class="introRequest" type="text" placeholder="请输入要推广的产品及其要素" bindinput="changeTextarea"></textarea>
+  </view>
+  <view class="clothes-block">衣服信息
+    <view class="clothesInfo">
+      <!-- <view bindtap="showStyle">款式</view> -->
+      <button type="primary" size="mini" bindtap="showStyle">选择衣服</button>
+    </view>
+  </view>
+  <view class="chooseResult">
+    <view wx:for="{{style_num}}" wx:key="this">{{item.style}}<text decode>&nbsp;&nbsp;</text>{{item.num}}件</view>
+    <view>{{selected}}</view>
+  </view>
+  <button bindtap="summit">提交</button>
+</view>
+
+<!-- 弹窗 -->
+<view class="modal {{isRuleTrue?'isRuleShow':'isRuleHide'}}">
+    <view class="cloDetailTitle">衣服信息</view>
+    <!-- 数量 -->
+    <view class="title">数量(至少1000件)</view>
+    <view class="line"></view>
+    <view class="deside-block">
+      <view class="style-num"  wx:for="{{style_num}}" data-id="{{item.id}}" wx:key="this" bindtap="getID">
+      <view class="inputNum-block">
+        <view style="width:200rpx">{{item.style}}</view>
+        <view style="width:300rpx" class="input-block">
+          <image class="icon" src="http://1.14.144.194:8080/download2/images/dec.png" bindtap="decTshirtNum" id="{{item.id}}"></image>
+          <!-- <view>{{item.num}}</view> -->
+          <input class="input-border" disabled type="text" value="{{item.num}}"/>
+          <!-- <input class="input-border" type="text"/> -->
+          <image class="icon" src="http://1.14.144.194:8080/download2/images/inc.png" bindtap="incTshirtNum" id="{{item.id}}"></image>
+        </view>
+      </view>
+    </view>
+    </view>
+    <!-- 尺码 -->
+    <view class="title">尺码</view>
+    <view class="line"></view>
+    <view class="desideNum-block">
+      <checkbox-group class="checkBox" bindchange="checkboxChange">
+        <label class="checkItems" wx:for="{{items}}" wx:key="this">
+          <view class="checkedBox">
+            <checkbox value="{{item.value}}" checked="{{item.checked}}"/>
+          </view>
+          <view class="checkedName">{{item.name}}</view>
+        </label>
+      </checkbox-group>
+    </view>
+    
+    <!-- <label class="checkItems">
+      <view class="title">数量</view>
+      <input class="cloNum" type="text" value=""></input>
+      <view class="tip">(不少于100件)</view>
+    </label> -->
+    <button class="no" size="mini" type="default" bindtap="hideRule">取消</button>
+    <button class="yes" size="mini" type="primary" bindtap="confirmRule">确定</button>
+  </view>

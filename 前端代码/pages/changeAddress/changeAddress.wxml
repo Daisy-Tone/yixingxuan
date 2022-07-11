@@ -1,0 +1,4 @@
+<view class="input-block">
+  <input class="input" type="text" bindblur="changeAddress" placeholder="修改地址"/>
+  <button class="btn" type="primary" size="mini" value="{{text}}">确定</button>
+</view>

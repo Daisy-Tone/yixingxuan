@@ -1,0 +1,28 @@
+{
+  "style_num":[
+    {
+      "id":0,
+      "style":"卫衣",
+      "icon":"/images/point.png",
+      "num":0
+    },
+    {
+      "id":1,
+      "style":"T恤",
+      "icon":"/images/point.png",
+      "num":0
+    },
+    {
+      "id":2,
+      "style":"Polo衫",
+      "icon":"/images/point.png",
+      "num":0
+    }
+  ],
+  "items": [
+    {"value": "MSize", "name": "M", "checked": "true"},
+    {"value": "LSize", "name": "L"},
+    {"value": "XLSize", "name": "XL"},
+    {"value": "XXLSize", "name": "XXL"}
+  ]
+}

@@ -1,0 +1,148 @@
+page{
+  background-color: white;
+}
+ 
+.top {
+  width: 100%;
+  background-color: #f7f7f7;
+}
+ 
+.topsearch {
+  width: 90%;
+  margin-left: 5%;
+  display: flex;
+  padding: 2% 0;
+  align-items: center;
+}
+ 
+.frame {
+  background-color: white;
+  width: 75%;
+  border-radius: 20rpx;
+  padding: 0 3%;
+}
+ 
+.frame>input {
+  font-size: 24rpx;
+  margin: 6rpx 0;
+}
+ 
+.topsearch>text {
+  width: 10%;
+  margin-left: 5%;
+  color: #a8a7a7fa;
+}
+ 
+.history {
+  background-color: white;
+  padding: 4%;
+}
+ 
+.history_title {
+  font-size: 30rpx;
+  display: flex;
+  justify-content: space-between;
+  color: #a8a7a7fa;
+  align-items: center;
+}
+ 
+.history_text {
+  padding: 4% 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+ 
+.history_text>text {
+  background-color: #f7f7f7;
+  padding: 1% 3%;
+  margin: 2%;
+  border-radius: 40rpx;
+  font-size: 30rpx;
+}
+ 
+.history_text>text:first-child{
+  margin-left: 0;
+}
+ 
+.none{
+  height: 400rpx;
+  margin-top: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 1rpx 1rpx 3rpx 2rpx #EBEBEB;
+  border-bottom-left-radius: 5%;
+  border-bottom-right-radius: 5%;
+}
+ 
+.swiper_con {
+  width: 96%;
+  margin-left: 2%;
+  display: flex;
+  flex-wrap: wrap;
+}
+ 
+.swiper_con_view {
+  width: 48%;
+  height: 530rpx;
+  background-color: white;
+  margin: 10rpx 0;
+  border: solid 1rpx #38aaf3;
+}
+ 
+.swiper_con_view:nth-child(even) {
+  margin-left: 4%;
+}
+ 
+.swiper_con_view_view {
+  margin-top: 5%;
+  display: flex;
+  align-items: center;
+}
+
+/* index样式 */
+.shopsView{
+  /* 横排 */
+  display: flex;
+  /* 换行 */
+  flex-wrap: wrap;
+}
+.item{
+  width: 48%;
+  height: 600rpx;
+  margin-left: 8rpx;
+  margin-top: 30rpx;
+  box-shadow: 1rpx 1rpx 3rpx 3rpx #EBEBEB;
+  
+}
+.adjust{
+  padding: 3rpx 2%;
+}
+.imageSize{
+  height: 400rpx;
+  width: 99%;
+}
+.shopIntro{
+  height: 60rpx;
+  width: 330rpx;
+  font-size: 15px;
+}
+.bottom-block{
+  margin-top: 50rpx;
+  width: 330rpx;
+  height: 150rpx;
+}
+.clientName{
+  font-size: 12px;
+  color: rgb(202, 202, 202);
+}
+.price-block{
+  color: #38aaf3;
+  float: right;
+  display: flex;
+}
+.pointImg{
+  width: 45rpx;
+  height: 45rpx;
+}

@@ -1,0 +1,113 @@
+/* pages/clientOrder/clientOrder.wxss */
+.order-block{
+  width: 90%;
+  height: 400rpx;
+  margin-left: 5%;
+  margin-top: 20rpx;
+  border: #38aaf3 solid 1rpx;
+  border-top-left-radius: 2%;
+  border-top-right-radius: 2%;
+  border-bottom-left-radius: 2%;
+  border-bottom-right-radius: 2%;
+}
+.img-title{
+  display: flex;
+  height: 130rpx;
+}
+.image-block{
+  width: 100rpx;
+  height: 100rpx;
+  margin-left: 10rpx;
+  margin-top: 10rpx;
+  background-color: rgba(119, 119, 119, 0.067)
+}
+.audit-block{
+  margin-top: 10rpx;
+  margin-left: 30rpx;
+  font-size: 34rpx;
+  width: 180rpx;
+}
+
+.select_box{
+  background: #fff;
+  width: 200rpx;
+  margin-left: 10rpx;
+  position: relative;
+ }
+ .select{
+  box-sizing: border-box;
+  width: 100%;
+  height: 70rpx;
+  border:1px solid #efefef;
+  border-radius: 8rpx;
+  display: flex;
+  align-items: center;
+  padding: 0 20rpx;
+ }
+ .select_text{
+  font-size: 30rpx;
+  flex: 1;
+ }
+ .select_img{
+  width: 40rpx;
+  height: 40rpx;
+  display: block;
+  transition:transform 0.3s;
+ }
+ .select_img_rotate{
+  transform:rotate(180deg); 
+ }
+ .option_box{
+  position: absolute;
+  top: 70rpx;
+  width: 100%;
+  border:1px solid #efefef;
+  box-sizing: border-box;
+  height: 0;
+  overflow-y: auto;
+  border-top: 0;
+  background: #fff;
+  transition: height 0.3s;
+ }
+ .option{
+  display: block;
+  line-height: 40rpx;
+  font-size: 30rpx;
+  border-bottom: 1px solid #efefef;
+  padding: 10rpx;
+ }
+ .updateBtn{
+   width: 120rpx;
+   height: 70rpx;
+   color: white;
+   text-align: center;
+   line-height: 70rpx;
+   background-color: #38aaf3;
+   border-radius: 10rpx;
+ }
+
+/* .title-block{
+  width: 455rpx;
+  height: 150rpx;
+  margin-left: 10rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+} */
+.clothes-block{
+  display: flex;
+  color: rgb(173,173,173);
+  font-size: 14px;
+}
+.left{
+  width: 320rpx;
+  margin-left: 17rpx;
+}
+.right{
+  width: 300rpx;
+  margin-left: 37rpx;
+  display: flex;
+}
+.InfoTitle{
+  color: #38aaf3;
+}

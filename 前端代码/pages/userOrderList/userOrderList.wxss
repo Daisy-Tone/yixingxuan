@@ -1,0 +1,23 @@
+.allView{
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 10rpx;
+}
+.orderItem{
+  width: 100%;
+  height: 200rpx;
+  margin-top: 15rpx;
+  box-shadow: 2rpx 2rpx 5rpx 2rpx #38aaf3;
+}
+.title-block{
+  display: flex;
+}
+.titleInfo{
+  margin-left: 10rpx;
+}
+.viewBtn{
+  width: 100%;
+  color: #38aaf3;
+  margin-top: 10rpx;
+  text-align: right;
+}

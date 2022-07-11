@@ -1,0 +1,98 @@
+<!--pages/clothdetail/clothdetail.wxml-->
+<!-- 遮罩 -->
+<view class="mask" wx:if="{{isRuleTrue}}"></view>
+
+<view class="clothesdetail" wx:key="this">
+  <!-- 衣服视图 -->
+  <swiper class="swiper" indicator-dots indicator-color="gray" indicator-active-color="white" autoplay circular>
+    <swiper-item wx:for="{{pic}}">
+      <image class="images" src="{{item}}"></image>
+    </swiper-item>
+  </swiper>
+</view>
+  <view class="clothesdetail" wx:for="{{shopDetail}}" wx:key="this">
+  <!-- 积分价格板块 -->
+  <view class="point-price">
+    <view class="title-price">
+      <view class="title-block">{{item.style_name}} 序列 {{item.client_id}}</view>
+      <view class="block">
+        <view class="point-block">
+          <image class="icon" src="http://1.14.144.194:8080/download2/images/point.png"></image>
+          <view class="point">积分: {{item.use_points}}</view>
+        </view>
+        <view class="price-block">
+          <image class="icon" src="http://1.14.144.194:8080/download2/images/point.png"></image>
+          <view class="price">价格: {{item.price}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 购买按钮 -->
+  <view class="buy" bindtap='showRule'>购买</view>
+  <!-- 评价 -->
+  <view class="evaluate-block">
+    <view class="evaluate">评价 ({{appraise.length}}) </view>
+    <!-- <view class="evaluateInput">
+      <input bindblur="evaluate" class="inputText" type="text"  value="{{text}}" placeholder="参与评价"/>
+      <view class="evaluateBtn" bindtap="submitText">评价</view>
+    </view> -->
+  </view>
+  <view class="apartLine"></view>
+  <view style="margin-top:10rpx" wx:for="{{appraise}}" wx:key="this">
+    <view class="comment">
+      <view>USER@{{item.user_id}}</view>
+      <view class="content">{{item.appraise}}</view>
+      <view style="text-align:right;margin-right:20rpx;font-size:11px">{{item.created_time}}</view>
+    </view>
+  </view>
+</view>
+
+<!-- 购买弹窗 -->
+<scroll-view scroll-y class="buyPage {{isRuleTrue?'isRuleShow':'isRuleHide'}}">
+  <view class="close-block">
+    <image class="closeIcon" src="http://1.14.144.194:8080/download2/images/close.png" bindtap="hideRule">关闭</image>
+    <image class="showImage" src="http://1.14.144.194:8080/download2/images/repray.png"></image>
+  </view>
+
+
+
+<!-- 这是测试的模块 -->
+<!-- <view class="title">属性值联动选择</view>  -->
+<!--options-->
+<view class="commodity_attr_list"> 
+  <!--每组属性-->
+  <view class="attr_box" wx:for="{{attrValueList}}" wx:for-item="attrValueObj" wx:for-index="attrIndex"> 
+   <!--属性名-->
+   <view class="attr_name">{{attrValueObj.attrKey}}</view> 
+  
+   <!--属性值-->
+   <view class="attr_value_box"> 
+     <!--每个属性值-->
+     <view class="attr_value {{attrIndex==firstIndex || attrValueObj.attrValueStatus[valueIndex]?(value==attrValueObj.selectedValue?'attr_value_active':''):'attr_value_disabled'}}" bindtap="selectAttrValue" data-status="{{attrValueObj.attrValueStatus[valueIndex]}}"
+     data-value="{{value}}" data-key="{{attrValueObj.attrKey}}" data-code="{{attrCode}}" data-index="{{attrIndex}}" data-selectedvalue="{{attrValueObj.selectedValue}}" wx:for="{{attrValueObj.attrValues}}" wx:for-item="value" wx:for-index="valueIndex">{{value}}</view> 
+   </view> 
+ </view> 
+</view> 
+<view class="chooseNum-block">
+      <image class="icon" src="http://1.14.144.194:8080/download2/images/dec.png" bindtap="reduceNum"></image>
+      <input class="showNum" type="text" disabled value="{{inputNum}}"/>
+      <image class="icon" src="http://1.14.144.194:8080/download2/images/inc.png" bindtap="addNum"></image>
+   </view>
+   <view class="totalPrice">总积分价：{{inputNum*price}}</view>
+  <!-- <view class="summit">提交订单</view> -->
+<!--button-->
+<view class="weui-btn-area"> 
+  <button class="weui-btn" bindtap="submit">选好了    </button>
+  <button class="weui-btn" bindtap="clickToBuyCar">支付清单</button>
+</view>
+
+<!-- 这是测试的模块 -->
+
+
+</scroll-view>
+<!-- 显示已有积分 -->
+<view class="showPoints">
+  <view class="">
+    
+  </view>
+</view>

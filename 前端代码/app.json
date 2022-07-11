@@ -1,0 +1,51 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/activity/activity",
+    "pages/userPage/userPage",
+    "pages/clientPage/clientPage",
+    "pages/userPersonInfo/userPersonInfo",
+    "pages/clothdetail/clothdetail",
+    "pages/submitRequest/submitRequest",
+    "pages/clientOrder/clientOrder",
+    "pages/clientOrderList/clientOrderList",
+    "pages/myStep/myStep",
+    "pages/userOrder/userOrder",
+    "pages/userOrderList/userOrderList",
+    "pages/newIndex/newIndex",
+    "pages/myPoint/myPoint",
+    "pages/buyCar/buyCar"
+  ],
+  "window":{
+    "navigationBarBackgroundColor":"#38aaf3",
+    "backgroundTextStyle":"light",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle":"white",
+    "enablePullDownRefresh":true
+  },
+  "tabBar": {
+    "list":[
+      {
+        "pagePath": "pages/activity/activity",
+        "iconPath": "/images/activity-dark.png",
+        "selectedIconPath": "/images/activity.png",
+        "text": "活动"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "/images/home-dark.png",
+        "selectedIconPath": "/images/home.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/userPage/userPage",
+        "iconPath": "/images/my-dark.png",
+        "selectedIconPath": "/images/my.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

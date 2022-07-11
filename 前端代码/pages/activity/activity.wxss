@@ -1,0 +1,46 @@
+/* pages/activity/activity.wxss */
+.swiper{
+  /* 第一个参数是上下，第二个参数是左右 */
+  padding: 0 auto;
+}
+.images{
+  width:100%;
+}
+.step-point{
+  display: flex;
+  margin-top: 2rpx;
+}
+.Container{
+  height: 100rpx;
+  width: 100%;
+  text-align: center;
+  margin-top: 5rpx;
+  box-shadow: 2rpx 2rpx 3rpx 3rpx #EBEBEB;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+  border-bottom-left-radius: 5%;
+  border-bottom-right-radius: 5%;
+}
+/* 使step垂直居中 */
+.makeContentMid{
+  margin: auto;
+  margin-top: 40px;
+  width: 200rpx;
+  height: 45rpx;
+  display: flex;
+}
+/* 我的步数和图标并排 */
+.contentText{
+  width: 100%;
+  font-size: 16px;
+  color: #38aaf3;
+  display: flex;
+}
+/* Logo域 */
+.LogoArea{
+  width: 50rpx;
+}
+.Logo{
+  height: 48rpx;
+  width: 48rpx;
+}
